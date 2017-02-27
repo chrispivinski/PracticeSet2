@@ -1,40 +1,53 @@
 package base;
 ///Chris Pivinski
 
-///Thanks for the help Professor Gibbons, copy and pasting the project into a different
-///workspace immediately fixed that bizarre error I was getting
+///Thanks for the letting me resubmit.  I really appreciate it.
 
-public class MyInteger {
-
+public class MyInteger {	
+	private static int iValue;
 	
-	private int iValue;
-
 	public MyInteger(int iValue) {
 		super();
-		this.iValue = iValue;
+		MyInteger.iValue = iValue;
 	}
 
-	public int getiValue() {
+	public static int getiValue() {
 		return iValue;
 	}
 
 	public void setiValue(int iValue) {
-		this.iValue = iValue;
+		MyInteger.iValue = iValue;
 	}
 	
 	//Calculates if given integer is even
-	public boolean isEven()
+	public static boolean isEven()
 	{
 		return getiValue() % 2 == 0;
 	}
 	
+	public static boolean isEven(int iValue) {
+		return isEven();
+	}
+	
+	public static boolean isEven(MyInteger myInt) {
+		return isEven();
+	}
+	
 	//Calculates if given integer is odd
-	public boolean isOdd()
+	public static boolean isOdd()
 	{
 		return getiValue() % 2 != 0;
 	}
+	
+	public static boolean isOdd(int iValue) {
+		return isOdd();
+	}
+	
+	public static boolean isOdd(MyInteger myInt) {
+		return isOdd();
+	}
 	//Calculates if given integer is prime
-	public boolean isPrime()
+	public static boolean isPrime()
 	{
 		for (int divisor = 2; divisor <= getiValue() / 2; divisor++) {
 			if (getiValue() % divisor == 0) {
@@ -43,5 +56,32 @@ public class MyInteger {
 		}
 		return true;
 	}
-
+	
+	public static boolean isPrime(int iValue) {
+		return isPrime();
+	}
+	
+	public static boolean isPrime(MyInteger myInt) {
+		return isPrime();
+	}
+	
+	public boolean equals(int iValue, int iValues) {
+		if (iValue == iValues) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public static boolean equals(MyInteger myInt, MyInteger iValues) {
+		if (myInt == iValues) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
+	
+
+
