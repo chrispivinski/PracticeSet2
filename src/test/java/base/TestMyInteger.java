@@ -48,6 +48,10 @@ public class TestMyInteger {
 		example.setiValue(sampleInteger);
 		example.equals(sampleInteger, 544);
 		example.equals(sampleInteger, 54);
+		
+		assertEquals(val1.isOdd(), false);
+		assertEquals(val1.isEven(), true);
+		assertEquals(val1.isPrime(), false);
 
 		MyInteger.isOdd(sampleInteger);
 		MyInteger.isPrime(sampleInteger);

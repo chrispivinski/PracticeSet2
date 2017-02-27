@@ -20,34 +20,44 @@ public class MyInteger {
 	}
 	
 	//Calculates if given integer is even
-	public static boolean isEven()
+	public static boolean itsEven() 
 	{
 		return getiValue() % 2 == 0;
 	}
 	
+	public boolean isEven()
+	{
+		return itsEven();
+	}
+	
 	public static boolean isEven(int iValue) {
-		return isEven();
+		return itsEven();
 	}
 	
 	public static boolean isEven(MyInteger myInt) {
-		return isEven();
+		return itsEven();
 	}
 	
 	//Calculates if given integer is odd
-	public static boolean isOdd()
+	public static boolean itsOdd()
 	{
 		return getiValue() % 2 != 0;
 	}
+	public boolean isOdd()
+	{
+		return itsOdd();
+	}
 	
 	public static boolean isOdd(int iValue) {
-		return isOdd();
+		return itsOdd();
 	}
 	
 	public static boolean isOdd(MyInteger myInt) {
-		return isOdd();
+		return itsOdd();
 	}
+
 	//Calculates if given integer is prime
-	public static boolean isPrime()
+	public static boolean itsPrime()
 	{
 		for (int divisor = 2; divisor <= getiValue() / 2; divisor++) {
 			if (getiValue() % divisor == 0) {
@@ -57,12 +67,17 @@ public class MyInteger {
 		return true;
 	}
 	
+	public boolean isPrime()
+	{
+		return itsPrime();
+	}
+	
 	public static boolean isPrime(int iValue) {
-		return isPrime();
+		return itsPrime();
 	}
 	
 	public static boolean isPrime(MyInteger myInt) {
-		return isPrime();
+		return itsPrime();
 	}
 	
 	public boolean equals(int iValue, int iValues) {

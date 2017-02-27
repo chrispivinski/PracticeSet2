@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="base.MyInteger" project="PracticeSet2.2Sample" 
     file="/PracticeSet2.2Sample/src/main/java/base/MyInteger.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="333" width="203" x="64" y="25"/>    
+    <position height="-1" width="-1" x="164" y="296"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="base.TestMyInteger" project="PracticeSet2.2Sample" 
     file="/PracticeSet2.2Sample/src/test/java/base/TestMyInteger.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="157" x="356" y="137"/>    
+    <position height="171" width="157" x="366" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
